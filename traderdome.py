@@ -9,6 +9,11 @@ import pandas as pd
 import base64
 import altair as alt
 
+# Password protection
+password = st.text_input("Enter password:", type="password")
+if password != "traderdome2026":
+    st.stop()
+
 # Page config
 st.set_page_config(page_title="TraderDome: Meme Coins", layout="wide", initial_sidebar_state="collapsed")
 
