@@ -423,7 +423,7 @@ if 'initialized' not in st.session_state:
         "wen-4": "🗓️", "smog": "💨", "maneki": "🐈", "gigachad": "💪", "degen-base": "🎲"
     }
 
-    historical_file = os.path.join(os.path.dirname(__file__), "historical_prices_real.json")
+    historical_file = "historical_prices.json"
     with open(historical_file, 'r') as f:
         st.session_state.historical_data = json.load(f)
 
